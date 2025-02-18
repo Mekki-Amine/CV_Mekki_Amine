@@ -8,53 +8,62 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <style>
         body {
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
         }
     </style>
 </head>
-<body class="flex justify-center items-center min-h-screen p-5">
-    <div class="max-w-3xl w-full bg-white p-8 rounded-lg shadow-lg animate-fade-in">
-        <header class="text-center">
-            <img src="profile.jpg" alt="Mekki Amine" class="w-32 h-32 mx-auto rounded-full shadow-md">
-            <h1 class="text-3xl font-bold mt-4">Mekki Amine</h1>
-            <h2 class="text-xl text-gray-600">Développeur Full Stack</h2>
-            <div class="mt-4 space-y-2 text-gray-700">
-                <p><strong>Email:</strong> <a href="mailto:amine.mekki@sesame.com.tn" class="text-blue-500">amine.mekki@sesame.com.tn</a></p>
-                <p><strong>Téléphone:</strong> +216 54 806 366</p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mekki-amine" target="_blank" class="text-blue-500">LinkedIn Profile</a></p>
-                <p><strong>Localisation:</strong> Manouba, Tunisie</p>
+<body class="font-sans bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-xl shadow-lg max-w-3xl w-full animate-fadeIn">
+        <div class="flex items-center gap-6">
+            <img src="photo.jpg" alt="Mekki Amine" class="w-32 h-32 object-cover rounded-full shadow-md">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-800">Mekki Amine</h1>
+                <h2 class="text-xl text-blue-600">Développeur Full Stack</h2>
+                <p class="text-gray-500">Manouba, Tunisie</p>
             </div>
-        </header>
+        </div>
+        
+        <div class="mt-6">
+            <h3 class="text-xl font-semibold text-gray-700">Contact</h3>
+            <p>Email : <a href="mailto:amine.mekki@sesame.com.tn" class="text-blue-600">amine.mekki@sesame.com.tn</a></p>
+            <p>Téléphone : +216 54 806 366</p>
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/mekki-amine" class="text-blue-600">Profil LinkedIn</a></p>
+        </div>
 
-        <section class="mt-6">
-            <h2 class="text-2xl font-semibold text-gray-800">À PROPOS</h2>
-            <p class="mt-2 text-gray-700">Étudiant en 3ème année de Licence en Informatique et Multimédia, passionné par la Data Science et le développement d'applications web et mobiles.</p>
-        </section>
+        <div class="mt-6">
+            <h3 class="text-xl font-semibold text-gray-700">À PROPOS</h3>
+            <p class="text-gray-600">Étudiant en 3ème année de Licence en Informatique, passionné par la Data Science et le développement d'applications web et mobiles.</p>
+        </div>
 
-        <section class="mt-6">
-            <h2 class="text-2xl font-semibold text-gray-800">Formation</h2>
-            <ul class="list-disc ml-6 text-gray-700 mt-2">
-                <li><strong>Université SESAME</strong> - Licence en informatique et multimédia (en cours), Tunis</li>
-                <li><strong>Lycée Asdrubal Bardo</strong> - Baccalauréat en informatique</li>
-            </ul>
-        </section>
-
-        <section class="mt-6">
-            <h2 class="text-2xl font-semibold text-gray-800">Compétences Techniques</h2>
+        <div class="mt-6">
+            <h3 class="text-xl font-semibold text-gray-700">Compétences</h3>
             <div class="flex flex-wrap gap-2 mt-2">
-                <span class="bg-blue-500 text-white px-3 py-1 rounded-full">Python</span>
-                <span class="bg-blue-500 text-white px-3 py-1 rounded-full">Java</span>
-                <span class="bg-blue-500 text-white px-3 py-1 rounded-full">Spring Boot</span>
-                <span class="bg-blue-500 text-white px-3 py-1 rounded-full">React</span>
-                <span class="bg-blue-500 text-white px-3 py-1 rounded-full">Next.js</span>
-                <span class="bg-blue-500 text-white px-3 py-1 rounded-full">SQL</span>
-                <span class="bg-blue-500 text-white px-3 py-1 rounded-full">Linux</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-lg">Python</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-lg">Java</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-lg">Spring Boot</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-lg">Next.js</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-lg">React</span>
+                <span class="bg-blue-500 text-white px-3 py-1 rounded-lg">SQL</span>
             </div>
-        </section>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-semibold text-gray-700">Expériences</h3>
+            <p class="text-gray-600"><strong>Business Intelligence Developer, BeeCoders</strong> (Juillet 2024)</p>
+            <ul class="list-disc ml-6 text-gray-600">
+                <li>Création de tableaux de bord interactifs avec Power BI.</li>
+                <li>Optimisation des modèles de données.</li>
+            </ul>
+        </div>
+
+        <div class="mt-6">
+            <h3 class="text-xl font-semibold text-gray-700">Langues</h3>
+            <p class="text-gray-600">Français (Excellent) - Anglais (Excellent) - Arabe (Langue maternelle) - Allemand (Intermédiaire)</p>
+        </div>
     </div>
-    
+
     <script>
-        gsap.from(".animate-fade-in", { opacity: 0, y: 50, duration: 1, ease: "power2.out" });
+        gsap.from(".animate-fadeIn", { opacity: 0, duration: 1, y: -50 });
     </script>
 </body>
 </html>
