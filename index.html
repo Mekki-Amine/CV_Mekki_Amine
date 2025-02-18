@@ -3,79 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Mekki Amine</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <style>
-        body {
-            background-color: #f3f4f6;
-        }
-    </style>
+    <title>CV Mekki Amine</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
-<body class="font-sans bg-gray-100 flex items-center justify-center min-h-screen p-5">
-    <div class="bg-white p-8 rounded-xl shadow-xl max-w-4xl w-full animate-fadeIn">
-        <div class="flex flex-col md:flex-row items-center gap-6">
-            <img src="photo.png" alt="Mekki Amine" class="w-40 h-40 object-cover rounded-full shadow-md border-4 border-blue-500">
-            <div class="text-center md:text-left">
-                <h1 class="text-4xl font-bold text-gray-800">Mekki Amine</h1>
-                <h2 class="text-2xl text-blue-600 font-semibold">Développeur Full Stack</h2>
-                <p class="text-gray-500">Manouba, Tunisie</p>
-            </div>
-        </div>
-        
-        <div class="mt-6">
-            <h3 class="text-2xl font-semibold text-gray-700 border-b pb-2">Contact</h3>
-            <p>Email : <a href="mailto:amine.mekki@sesame.com.tn" class="text-blue-600">amine.mekki@sesame.com.tn</a></p>
-            <p>Téléphone : <a href="tel:+21654806366" class="text-blue-600">+216 54 806 366</a></p>
-            <p>LinkedIn : <a href="https://www.linkedin.com/in/amine-mekki-9650b730b" class="text-blue-600">Profil LinkedIn</a></p>
-        </div>
-
-        <div class="mt-6">
-            <h3 class="text-2xl font-semibold text-gray-700 border-b pb-2">À PROPOS</h3>
-            <p class="text-gray-600">Étudiant en 3ème année de Licence en Informatique et Multimédia, passionné par la Data Science et le développement web et mobile. Je recherche un stage de fin d'études pour appliquer mes compétences en machine learning, développement backend et bases de données afin d'améliorer les performances des systèmes d'information.</p>
-        </div>
-
-        <div class="mt-6">
-            <h3 class="text-2xl font-semibold text-gray-700 border-b pb-2">Compétences</h3>
-            <div class="flex flex-wrap gap-3 mt-3">
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-lg">Python</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-lg">Java</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-lg">Spring Boot</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-lg">Next.js</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-lg">React</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-lg">SQL</span>
-                <span class="bg-blue-500 text-white px-4 py-2 rounded-lg">Linux</span>
-            </div>
-        </div>
-
-        <div class="mt-6">
-            <h3 class="text-2xl font-semibold text-gray-700 border-b pb-2">Expériences</h3>
-            <p class="text-gray-600 font-bold">Business Intelligence Developer, BeeCoders (Juillet 2024)</p>
-            <ul class="list-disc ml-6 text-gray-600">
-                <li>Création de tableaux de bord interactifs avec Power BI.</li>
-                <li>Optimisation des modèles de données.</li>
-                <li>Technologies : Power BI, SQL, DAX, Python, Talend.</li>
+<body class="bg-gray-100 text-gray-900">
+    <div class="container mx-auto p-4">
+        <header class="text-center mb-8">
+            <img src="photo.jpg" alt="Photo de Mekki Amine" class="rounded-full mx-auto mb-4 w-32 h-32">
+            <h1 class="text-4xl font-bold">Mekki Amine</h1>
+            <p class="text-xl">Développeur Full Stack</p>
+            <p>amine.mekki@sesame.com.tn | <a href="https://www.linkedin.com/in/amine-mekki-9650b730b/" class="text-blue-500">LinkedIn</a> | +216 54 806 366 | Manouba, Tunisie</p>
+        </header>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">À PROPOS</h2>
+            <p>Étudiant en 3ème année de Licence en Informatique et Multimédia, passionné par la Data Science et le développement d'applications web et mobiles. Je cherche un stage de fin d'études où je pourrais appliquer mes compétences en machine learning, développement backend et gestion de bases de données pour résoudre des problématiques concrètes et optimiser les performances des systèmes d'information.</p>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">FORMATION</h2>
+            <p><strong>Université SESAME</strong><br>Licence en informatique et multimédia (en cours) | 2022 – 2025 | Tunis</p>
+            <p><strong>Lycée Asdrubal Bardo</strong><br>Baccalauréat en informatique | 2017 – 2018 | Tunis</p>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">EXPÉRIENCES PROFESSIONNELLES</h2>
+            <p><strong>Business Intelligence Developer, BeeCoders</strong><br>Juillet 2024 – Présent</p>
+            <ul class="list-disc list-inside">
+                <li>Création de tableaux de bord interactifs avec Power BI pour améliorer la prise de décision.</li>
+                <li>Optimisation des modèles de données garantissant leur qualité et intégrité.</li>
+                <li><strong>Technologies</strong> : Power BI, SQL, DAX, Python, Talend.</li>
             </ul>
-        </div>
-
-        <div class="mt-6">
-            <h3 class="text-2xl font-semibold text-gray-700 border-b pb-2">Projets Académiques</h3>
-            <ul class="list-disc ml-6 text-gray-600">
-                <li><strong>Prédiction des ventes avec Machine Learning</strong> - Développement d'un modèle prédictif pour analyser les tendances.</li>
-                <li><strong>Application Web de Gestion de Stock</strong> - Conception d'un système efficace pour la gestion de stock.</li>
-                <li><strong>Reconnaissance vocale</strong> - Automatisation de tâches grâce à un système de reconnaissance vocale.</li>
-                <li><strong>Jeu "Space Shooter" en 2D</strong> - Création d'un jeu avec Unity intégrant des mécaniques avancées.</li>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">PROJETS ACADÉMIQUES</h2>
+            <p><strong>Prédiction des ventes avec Machine Learning</strong></p>
+            <ul class="list-disc list-inside">
+                <li>Développement d'un modèle prédictif basé sur les données historiques des ventes afin de prédire les tendances futures et d'optimiser les stratégies commerciales.</li>
+                <li><strong>Technologies</strong> : Python, Pandas, Scikit-learn.</li>
             </ul>
-        </div>
-
-        <div class="mt-6">
-            <h3 class="text-2xl font-semibold text-gray-700 border-b pb-2">Langues</h3>
-            <p class="text-gray-600">Français (Excellent) - Anglais (Excellent) - Arabe (Langue maternelle) - Allemand (Intermédiaire)</p>
-        </div>
+            <p><strong>Application Web de Gestion de Stock</strong></p>
+            <ul class="list-disc list-inside">
+                <li>Conception et développement d'un système de gestion de stock avec une interface web intuitive.</li>
+                <li><strong>Technologies</strong> : Spring Boot, Java, XML, MySQL, HTML, CSS, JavaScript.</li>
+            </ul>
+            <p><strong>Reconnaissance vocale</strong></p>
+            <ul class="list-disc list-inside">
+                <li>Développement d'un système de reconnaissance vocale pour automatiser certaines tâches.</li>
+                <li><strong>Technologies</strong> : Java, Speech API.</li>
+            </ul>
+            <p><strong>Jeu "Space Shooter" en 2D</strong></p>
+            <ul class="list-disc list-inside">
+                <li>Développement d'un jeu vidéo avec Unity, intégrant des mécaniques de tir, de collision et un système de score.</li>
+                <li><strong>Technologies</strong> : Unity, C#.</li>
+            </ul>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">COMPÉTENCES TECHNIQUES</h2>
+            <ul class="list-disc list-inside">
+                <li><strong>Langages de programmation</strong> : Python, Java, C++, JavaScript.</li>
+                <li><strong>Frameworks et outils de développement</strong> : Spring Boot, React, Angular, Next.js, Unity, Talend.</li>
+                <li><strong>Business Intelligence</strong> : Power BI, DAX.</li>
+                <li><strong>Bases de données</strong> : MySQL, Oracle, SQL, PL/SQL.</li>
+            </ul>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">LANGUES</h2>
+            <ul class="list-disc list-inside">
+                <li><strong>Français</strong> : Excellent.</li>
+                <li><strong>Anglais</strong> : Excellent.</li>
+                <li><strong>Arabe</strong> : Langue maternelle.</li>
+                <li><strong>Allemand</strong> : Intermédiaire.</li>
+            </ul>
+        </section>
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">CENTRES D'INTÉRÊT</h2>
+            <ul class="list-disc list-inside">
+                <li>Sport, Voyage.</li>
+            </ul>
+        </section>
     </div>
-
     <script>
-        gsap.from(".animate-fadeIn", { opacity: 0, duration: 1, y: -50 });
+        gsap.from("header", { duration: 1, y: -50, opacity: 0 });
+        gsap.from("section", { duration: 1, x: -50, opacity: 0, stagger: 0.3 });
     </script>
 </body>
 </html>
